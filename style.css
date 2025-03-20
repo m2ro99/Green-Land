@@ -250,8 +250,7 @@ main #feedback .container .cards .card-5:hover,
 main #feedback .container .cards .card-6:hover,
 main #feedback .container .cards .card-7:hover,
 main #feedback .container .cards .card-8:hover {
-  background-color: rgb(3, 3, 3);
-  color: #fff;
+  background-color: rgb(100 185 0);
 }
 /* ! Contact  */
 main #contact {
