@@ -13,13 +13,13 @@ Green Land is a static website created as part of an imaginary project for an on
 - Contact Us: A simple contact form for users to get in touch with the company.
 
 ## Key Features
-1- Responsive Design: The website is fully responsive, ensuring a great user experience across all devices, from desktops to mobile phones.
+- Responsive Design: The website is fully responsive, ensuring a great user experience across all devices, from desktops to mobile phones.
 
-2- Interactive Elements: Features like hover effects on social media icons and a dropdown menu for mobile navigation enhance user interaction.
+- Interactive Elements: Features like hover effects on social media icons and a dropdown menu for mobile navigation enhance user interaction.
 
-3- Preloaded Fonts and Icons: The website uses preloaded Font Awesome icons and Google Fonts to ensure fast loading times and a consistent design.
+- Preloaded Fonts and Icons: The website uses preloaded Font Awesome icons and Google Fonts to ensure fast loading times and a consistent design.
 
-4- SEO Optimization: Meta tags and descriptions are included to improve search engine visibility.
+- SEO Optimization: Meta tags and descriptions are included to improve search engine visibility.
 
 ## Technologies Used
 - HTML5: For structuring the content of the website.
