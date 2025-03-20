@@ -2,8 +2,6 @@
 Green Land is a static website created as part of an imaginary project for an online company that sells fresh, farm-sourced vegetables. This project was developed during an internship to showcase skills in web development, design, and user experience. The website is designed to provide a seamless and engaging shopping experience for customers looking to purchase high-quality, locally sourced vegetables online.
 
 ## Project Overview
-Green Land is a fully responsive, static website built using HTML and CSS. It features a clean and modern design, with a focus on user-friendly navigation and visually appealing content. The website includes several sections, such as:
-
 - Home: A welcoming introduction to Green Land, highlighting the freshness and quality of the produce.
 
 - About Us: Information about the company's mission, values, and commitment to sustainability.
