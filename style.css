@@ -1,0 +1,819 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+  outline: none;
+  border: none;
+}
+body {
+  background-image: url("./img/farming2.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  background-color: #000000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+header .container .main-list li a {
+  margin-right: 1.6rem;
+  color: #fff;
+  transition: 0.4s ease all;
+}
+header .container .drop-down li a {
+  color: #fff;
+  transition: 0.4s ease all;
+}
+header .container ul li a:hover {
+  color: #64b900;
+}
+/* ! Home or Hero Seciton */
+main #hero {
+  height: 100vh;
+  display: flex;
+}
+main .container {
+  margin: auto;
+}
+
+main #hero .container h2,
+main #hero .container p {
+  color: #fff;
+  text-align: center;
+}
+/* ! About Us */
+main #about .container h3 {
+  text-align: center;
+  color: #030303;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+main #about {
+  background-color: #fff;
+  padding: 5.2rem 0 15rem;
+}
+main #about .container .about-text {
+  margin-top: 3rem;
+}
+main #about .container .about-text p {
+  width: 85%;
+  font-size: 1.2rem;
+  margin: auto;
+  color: #030303;
+  text-align: center;
+}
+.line {
+  background-color: gray;
+  width: 50%;
+  height: 2px;
+  margin: 8rem auto;
+}
+
+main #about .container .services > p {
+  margin: 0 0 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: #030303;
+}
+main #about .container .services .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+main #about .container .services .boxes .box-1 div,
+main #about .container .services .boxes .box-2 div,
+main #about .container .services .boxes .box-3 div {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+main #about .container .services .boxes .box-1 div p,
+main #about .container .services .boxes .box-2 div p,
+main #about .container .services .boxes .box-3 div p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+main #about .container .services .boxes .box-1 p,
+main #about .container .services .boxes .box-2 p,
+main #about .container .services .boxes .box-3 p {
+  color: #030303;
+  font-weight: 500;
+}
+.fa-lemon,
+.fa-carrot,
+.fa-seedling {
+  font-size: 2rem;
+}
+/* ! Market */
+main #market {
+  background-color: #fff;
+  margin-bottom: 20rem;
+  padding: 5rem 0 7rem;
+  margin-top: 20rem;
+  text-align: center;
+}
+main #market .container h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+main #market .container q {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: 1rem 0 6rem;
+}
+main #market .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 20px 10px;
+}
+main #market .container .cards .card-1,
+main #market .container .cards .card-2,
+main #market .container .cards .card-3,
+main #market .container .cards .card-4,
+main #market .container .cards .card-5,
+main #market .container .cards .card-6,
+main #market .container .cards .card-7,
+main #market .container .cards .card-8,
+main #market .container .cards .card-9,
+main #market .container .cards .card-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+  cursor: default;
+}
+
+main #market .container .cards p:first-of-type {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+main #market .container .cards p:last-of-type {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main #market .container .cards button {
+  padding: 0.4rem 1.2rem;
+  font-weight: 600;
+  border: 1px solid #030303;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #030303;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+main #market .container .cards button:hover {
+  background-color: #030303;
+  color: #fff;
+}
+
+/*! Feedback */
+main #feedback {
+  background-color: #fff;
+  padding: 5rem 0 17rem;
+}
+main #feedback .container h5 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+main #feedback .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+main #feedback .container .cards p {
+  font-weight: 500;
+}
+main #feedback .container .cards p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main #feedback .container .cards p:last-of-type {
+  line-height: 2rem;
+}
+main #feedback .container .cards span {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+main #feedback .container .cards .card-1,
+main #feedback .container .cards .card-2,
+main #feedback .container .cards .card-3,
+main #feedback .container .cards .card-4,
+main #feedback .container .cards .card-5,
+main #feedback .container .cards .card-6,
+main #feedback .container .cards .card-7,
+main #feedback .container .cards .card-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  transition: 0.5s ease all;
+  cursor: default;
+  height: 100%;
+}
+main #feedback .container .cards .card-1:hover,
+main #feedback .container .cards .card-2:hover,
+main #feedback .container .cards .card-3:hover,
+main #feedback .container .cards .card-4:hover,
+main #feedback .container .cards .card-5:hover,
+main #feedback .container .cards .card-6:hover,
+main #feedback .container .cards .card-7:hover,
+main #feedback .container .cards .card-8:hover {
+  background-color: rgb(3, 3, 3);
+  color: #fff;
+}
+/* ! Contact  */
+main #contact {
+  margin-top: 20rem;
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+main #contact .container h6 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+main #contact .container p {
+  font-weight: 500;
+  text-align: center;
+  margin: 4rem 0;
+}
+main #contact .container .form {
+  display: flex;
+  justify-content: center;
+}
+main #contact .container label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+main #contact .container input,
+main #contact .container textarea {
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #030303;
+  transition: 0.4s ease all;
+  border-radius: 25px;
+  padding: 6px 14px;
+  font-size: 1rem;
+}
+main #contact .container input:focus,
+main #contact .container textarea:focus {
+  border: 1px solid #64b900;
+}
+main #contact .container textarea {
+  height: 140px;
+  border-radius: 15px 15px 0px;
+  padding: 10px;
+}
+main #contact .container input[type="submit"] {
+  background-color: #030303;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  display: block;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main #contact .container input[type="submit"]:hover {
+  background-color: #fff;
+  color: #030303;
+  border: 1px solid #030303;
+}
+main #contact .container input[type="submit"]:active {
+  border: 1px solid #64b900;
+}
+/* !footer */
+footer {
+  padding: 2rem 0 2rem;
+  background-color: #030303;
+}
+footer .container {
+  margin: auto;
+}
+
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .info a {
+  color: #fff;
+  transition: 0.3s ease all;
+}
+footer .container .info a:hover {
+  color: #64b900;
+}
+footer .container .foot .social {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+footer .container .foot .social a {
+  margin-right: 15px;
+}
+/*! Media Queries */
+@media (max-width: 575px) {
+  /* ! header */
+  header {
+    padding: 0;
+  }
+  header .container {
+    position: relative;
+  }
+  header .container a img {
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  header .container .main-list {
+    display: none;
+  }
+  .burger {
+    display: block;
+    padding: 25px;
+  }
+  .drop-down {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 100%;
+    z-index: 99999;
+    background-color: #030303;
+  }
+  .drop-down li a {
+    display: block;
+    padding: 15px 0 15px 15px;
+  }
+  .burger:hover .drop-down {
+    display: block;
+  }
+
+  /* ! Hero or Home Section */
+  main #hero .container h2 {
+    font-size: 2.3rem;
+  }
+  main #hero .container p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  /* ! About Us */
+
+  main #about .container h3 {
+    font-size: 1.9rem;
+  }
+  main #about .container .about-text p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  main #about .container .services > p {
+    font-size: 1.4rem;
+  }
+  .fa-lemon,
+  .fa-carrot,
+  .fa-seedling {
+    font-size: 1.5rem;
+  }
+  main #about .container .services .boxes .box-1 div,
+  main #about .container .services .boxes .box-2 div,
+  main #about .container .services .boxes .box-3 div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main #about .container .services .boxes .box-1 div p,
+  main #about .container .services .boxes .box-2 div p,
+  main #about .container .services .boxes .box-3 div p {
+    font-size: 1rem;
+  }
+
+  main #about .container .services .boxes .box-1 p,
+  main #about .container .services .boxes .box-2 p,
+  main #about .container .services .boxes .box-3 p {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 70%;
+    margin: auto;
+  }
+  main #about .container .services .boxes {
+    grid-template-columns: 1fr;
+  }
+  /* ! Market */
+  main #market .container q {
+    font-size: 0.9rem;
+  }
+  main #feedback .container .cards {
+    grid-template-columns: 75%;
+  }
+  /* ! Feedback */
+  main #feedback .container h5 {
+    font-size: 1.3rem;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* ! Contact */
+  main #contact .container .form form {
+    width: 80%;
+  }
+  main #contact .container .form form div {
+    width: 100%;
+  }
+  main #contact .container .form form div label,
+  main #contact .container .form form div input {
+    width: 100%;
+  }
+
+  main #contact .container textarea {
+    width: 100%;
+    height: 140px;
+  }
+  main #contact .container p {
+    font-size: 0.9rem;
+  }
+  main #contact .container input[type="submit"] {
+    width: 100%;
+  }
+  /* ! footer */
+  footer .container .foot {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .container .foot .info {
+    text-align: center;
+  }
+  footer .container .info a {
+    color: #fff;
+    transition: 0.3s ease all;
+    font-size: 0.8rem;
+  }
+}
+/* --------------------------------------------------- */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+
+  /* ! header */
+  header {
+    padding: 0;
+  }
+  header .container {
+    position: relative;
+  }
+  header .container a img {
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+  header .container .main-list {
+    display: none;
+  }
+  .burger {
+    display: block;
+    padding: 25px 10px;
+  }
+  .drop-down {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 100%;
+    z-index: 99999;
+    background-color: #030303;
+  }
+  .drop-down li a {
+    display: block;
+    padding: 15px 0 15px 15px;
+  }
+  .burger:hover .drop-down {
+    display: block;
+  }
+  /* ! Hero or Home Section */
+  main #hero .container h2 {
+    font-size: 2.7rem;
+  }
+  main #hero .container p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  /* ! Market */
+  main #market .container q {
+    font-size: 1rem;
+  }
+  /* ! About Us */
+  main #about .container h3 {
+    font-size: 1.9rem;
+  }
+  main #about .container .about-text p {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  main #about .container .services > p {
+    font-size: 1.4rem;
+  }
+  .fa-lemon,
+  .fa-carrot,
+  .fa-seedling {
+    font-size: 1.5rem;
+  }
+  main #about .container .services .boxes .box-1 div,
+  main #about .container .services .boxes .box-2 div,
+  main #about .container .services .boxes .box-3 div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main #about .container .services .boxes .box-1 div p,
+  main #about .container .services .boxes .box-2 div p,
+  main #about .container .services .boxes .box-3 div p {
+    font-size: 1rem;
+  }
+
+  main #about .container .services .boxes .box-1 p,
+  main #about .container .services .boxes .box-2 p,
+  main #about .container .services .boxes .box-3 p {
+    text-align: center;
+  }
+  main #about .container .services .boxes {
+    grid-template-columns: 1fr;
+    gap: 2.5rem 0rem;
+  }
+
+  /* ! Contact */
+  main #contact .container .form form {
+    width: 80%;
+  }
+  main #contact .container .form form div {
+    width: 100%;
+  }
+  main #contact .container .form form div label,
+  main #contact .container .form form div input {
+    width: 100%;
+  }
+
+  main #contact .container textarea {
+    width: 100%;
+    height: 140px;
+  }
+  main #contact .container p {
+    font-size: 0.9rem;
+  }
+  main #contact .container input[type="submit"] {
+    width: 100%;
+  }
+  /* ! footer */
+  footer .container .foot {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .container .foot .info {
+    text-align: center;
+  }
+}
+/* --------------------------------------------------- */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  header {
+    padding: 15px;
+  }
+  header .container .main-list {
+    display: flex;
+    align-items: center;
+  }
+  .burger {
+    display: none;
+  }
+  /* ! header */
+  header .container a img {
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+  /* ! Hero or Home Section */
+  main #hero .container h2 {
+    font-size: 3.8rem;
+  }
+  main #hero .container p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  /* ! About Us */
+  main #about .container h3 {
+    font-size: 2.5rem;
+  }
+  main #about .container .about-text p {
+    font-size: 1.2rem;
+  }
+  main #about .container .services > p {
+    font-size: 2rem;
+  }
+  main #about .container .services .boxes .box-1 div,
+  main #about .container .services .boxes .box-2 div,
+  main #about .container .services .boxes .box-3 div {
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  main #about .container .services .boxes .box-1 div p,
+  main #about .container .services .boxes .box-2 div p,
+  main #about .container .services .boxes .box-3 div p {
+    font-size: 1.2rem;
+  }
+
+  main #about .container .services .boxes .box-1 p,
+  main #about .container .services .boxes .box-2 p,
+  main #about .container .services .boxes .box-3 p {
+    text-align: start;
+  }
+  main #about .container .services .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* ! Contact */
+  main #contact .container .form form {
+    width: 60%;
+  }
+  main #contact .container .form form div {
+    width: 85%;
+    margin: auto;
+  }
+  main #contact .container textarea {
+    height: 140px;
+  }
+  main #contact .container p {
+    font-size: 1rem;
+  }
+  main #contact .container input[type="submit"] {
+    width: 85%;
+  }
+  /* ! footer */
+
+  footer .container .foot {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .container .foot .info {
+    text-align: center;
+  }
+}
+/* --------------------------------------------------- */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  /* ! header */
+  header .container a img {
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+  /* ! Hero or Home Section */
+  main #hero .container h2 {
+    font-size: 4.2rem;
+  }
+  main #hero .container p {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  /* ! About Us */
+  main #about .container h3 {
+    font-size: 2.5rem;
+  }
+  main #about .container .about-text p {
+    font-size: 1.2rem;
+  }
+  main #about .container .services > p {
+    font-size: 2rem;
+  }
+  main #about .container .services .boxes .box-1 div,
+  main #about .container .services .boxes .box-2 div,
+  main #about .container .services .boxes .box-3 div {
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  main #about .container .services .boxes .box-1 div p,
+  main #about .container .services .boxes .box-2 div p,
+  main #about .container .services .boxes .box-3 div p {
+    font-size: 1.2rem;
+  }
+
+  main #about .container .services .boxes .box-1 p,
+  main #about .container .services .boxes .box-2 p,
+  main #about .container .services .boxes .box-3 p {
+    text-align: start;
+  }
+  main #about .container .services .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* ! Contact */
+  main #contact .container .form form {
+    width: 50%;
+  }
+  /* ! footer */
+  footer .container .foot {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  footer .container .foot .info {
+    text-align: start;
+  }
+}
+/* --------------------------------------------------- */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  header .container a img {
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+
+  /* ! Hero or Home Section */
+  main #hero .container h2 {
+    font-size: 4.5rem;
+  }
+  main #hero .container p {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  /* ! About Us */
+  main #about .container h3 {
+    font-size: 2.5rem;
+  }
+  main #about .container .about-text p {
+    font-size: 1.2rem;
+  }
+  main #about .container .services > p {
+    font-size: 2rem;
+  }
+  main #about .container .services .boxes .box-1 div,
+  main #about .container .services .boxes .box-2 div,
+  main #about .container .services .boxes .box-3 div {
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  main #about .container .services .boxes .box-1 div p,
+  main #about .container .services .boxes .box-2 div p,
+  main #about .container .services .boxes .box-3 div p {
+    font-size: 1.2rem;
+  }
+
+  main #about .container .services .boxes .box-1 p,
+  main #about .container .services .boxes .box-2 p,
+  main #about .container .services .boxes .box-3 p {
+    text-align: start;
+    font-size: 1.2rem;
+  }
+  main #about .container .services .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+}
+/* --------------------------------------------------- */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+@media (height <= 320px){
+  .drop-down li a {
+    padding: 14px 0px 10px 10px;
+}
+}
